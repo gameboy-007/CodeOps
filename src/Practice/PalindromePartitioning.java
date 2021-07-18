@@ -16,7 +16,7 @@ public class PalindromePartitioning {
 		}
 		
 		for(int end = start; end < s.length(); end++) {
-			 if(isPalindrome(start,end, s)){
+			 if(isPalindrome(start, end, s)){
 				 currentList.add(s.substring(start, end + 1));
 				 dfs(end + 1, s, list, currentList);
 				 currentList.remove(currentList.size() - 1);
